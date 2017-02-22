@@ -4,31 +4,38 @@
 # to generate your .gitignore file.
 
 # web application files
-/web-app/WEB-INF/classes
+/Server/istore/web-app/WEB-INF/classes
 
 # default HSQL database files for production mode
-/prodDb.*
+/Server/istore/prodDb.*
 
 # general HSQL database files
 *Db.properties
 *Db.script
 
 # logs
-/stacktrace.log
-/test/reports
-/logs
+/Server/istore/stacktrace.log
+/Server/istore/test/reports
+/Server/istore/logs
 
 # project release file
-/*.war
+/Server/istore/*.war
 
 # plugin release files
-/*.zip
-/plugin.xml
+/Server/istore/*.zip
+/Server/istore/plugin.xml
 
 # older plugin install locations
-/plugins
-/web-app/plugins
+/Server/istore/plugins
+/Server/istore/web-app/plugins
 
 # "temporary" build files
-/target
+/Server/istore/target
+/Server/istore/target-eclipse
+/Server/istore/out
+
+bin
+gen
+.svn
+.idea
 .settings
