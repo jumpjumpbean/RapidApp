@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+.welcome_title{
+	font-size:20px;
+}
+.notice_lable{
+	display: inline-block;
+	color: #88AADD;
+	float
+}
+.error{
+	font-size:12px;
+	color:red;	
+}
+label.error{
+	display: inline-block;
+	margin-left:10px;
+}
+.errorMessage{
+	font-size: 13px;
+	color: red;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.comm_btn{
+display: inline-block;
+margin: 2px 10px;
+border: solid 1px #0055dd;
+padding: 5px 20px;
+text-decoration: none;
+}
+
+opArea a:hover{
+	text-decoration: none;
+}
+
+.pagination {
+	border-top: 0;
+	margin: 0;
+	padding: 0.3em 0.2em;
+	text-align: right;
+}
+
+.pagination a,
+.pagination .currentStep {
+	color: #666666;
+	display: inline-block;
+	margin: 0 0.1em;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
+.no-borderradius .pagination .currentStep {
+	background-color: transparent;
+	color: #444444;
+	text-decoration: underline;
+}
+.logodiv{
+	height:60px;
+	background:#EDEDED url(./images/bg.png) repeat;
+}
+.logodiv img{
+	height:50px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.hoverTR{
+	background-color: #6677ff;
+	color: whitesmoke;
+}
+.clumndiff{
+	background-color: #ededee;
+}
+.hoverTR a{
+	color: whitesmoke;
+}
+.hoverTR a:hover{
+	text-decoration: none;
+	color: red;
+}

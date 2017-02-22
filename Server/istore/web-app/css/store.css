@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+#profile label{
+	display: inline-block;
+	width:80px;
+}
+#profile textarea{
+	resize:none
+}
+

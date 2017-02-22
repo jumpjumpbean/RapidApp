@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="imported">
+	<property name="keystore" value="D:/DocBook/SVN Root/RapidApp/istore/master/App/AndroidAPP/keystore" />
+	<property name="keystore.password" value="123456" />
+	<property name="key.alias" value="402881eb40063afb0140067e33cd0001" />
+	<property name="key.password" value="123456" />
+
+	<!-- build channel macro -->
+	<macrodef name="buildprocess">
+		<sequential>
+			<!-- build apk -->
+			<antcall target="clean"/>
+			<antcall target="release"/>
+			<!-- sign apk -->
+			<sign-release/>
+			<!-- zipalign  -->
+			<zipalign-release/>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="sign-release">
+		<sequential> 
+			<echo message ="signing the unsigned apk to final product apk bin/${ant.project.name}-release-unsigned.apk"/>
+			<echo message ="jarsigner -keystore ${keystore} -storepass ${keystore.password} -keypass ${key.password} -signedjar bin/${ant.project.name}-release.apk bin/${ant.project.name}-release-unsigned.apk ${key.alias} "/>
+			<exec executable="jarsigner">
+				<arg value="-keystore" />
+				<arg value="${keystore}" />
+				<arg value="-storepass" />
+				<arg value="${keystore.password}" />
+				<arg value="-keypass" />
+				<arg value="${key.password}" />
+				<arg value="-signedjar" />
+				<arg value="bin/${ant.project.name}-release.apk" />
+				<arg value="bin/${ant.project.name}-release-unsigned.apk" />
+				<arg value="${key.alias}" />
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="zipalign-release">
+		<sequential> 
+		<echo message ="zipalign the signed apk"/>
+			<exec executable="zipalign">
+				<arg value="-v" />
+				<arg value="4" />
+				<arg value="bin/${ant.project.name}-release.apk"/><!-- signed apk -->
+				<arg value="bin/${ant.project.name}-release-zipalign.apk"/><!-- zipalign output -->
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="createapk" >
+		<buildprocess/>
+	</target>
+</project>

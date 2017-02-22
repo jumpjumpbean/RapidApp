@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:15
+-keep class com.istore.androidapp.AppStartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.istore.androidapp.DetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.istore.androidapp.LauchReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.istore.androidapp.LauchService { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.istore.androidapp.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.istore.androidapp.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.istore.androidapp.PrefActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.istore.androidapp.SortActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.istore.androidapp.SortListActivity { <init>(...); }
+

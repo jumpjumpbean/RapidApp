@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<include layout="@layout/activity_main_header" />
+	 
+	<LinearLayout 
+	    android:id="@+id/LinearLayout1"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <ScrollView
+	        android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+        <LinearLayout 
+	    	android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill"
+            android:orientation="vertical">
+	        <LinearLayout 
+		    	android:id="@+id/LinearLayout3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="fill"
+	            android:orientation="vertical">
+	        </LinearLayout>
+		    <TextView 
+		        android:id="@+id/detail_name"
+		        style="@style/detail_text"
+		        />
+		    <TextView 
+		        android:id="@+id/detail_desc"
+		        style="@style/detail_text"
+		        />
+	    </LinearLayout>
+        </ScrollView>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="47dip" >
+	        <include layout="@layout/activity_main_footer" />
+        </LinearLayout>
+	 </LinearLayout>
+	 	 
+</LinearLayout>
+

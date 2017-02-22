@@ -1,0 +1,1 @@
+<a href="javascript:void(0)" onclick="app.user.changeImageCaptcha();"><jcaptcha:jpeg name="imageCaptcha" height="20px" width="80px" ></jcaptcha:jpeg></a>

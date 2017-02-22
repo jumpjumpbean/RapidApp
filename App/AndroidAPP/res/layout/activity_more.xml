@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<include layout="@layout/activity_main_header" />
+	 
+	<LinearLayout 
+	    android:id="@+id/LinearLayout1"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <ScrollView
+	        android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+        <LinearLayout 
+	    	android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill"
+            android:orientation="vertical"
+            android:padding="6dip">
+		    <TextView 
+		        android:id="@+id/store_name"
+		        style="@style/detail_text"
+		        android:background="@drawable/roundcorner_top"
+		        android:minHeight="40dip"
+		        android:paddingTop="4dip"
+		        android:paddingBottom="4dip"
+		        />
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="2dip"
+		        android:background="@color/white"
+		        />
+		    <TextView 
+		        android:id="@+id/store_desc"
+		        style="@style/detail_text"
+		        android:background="@drawable/roundcorner_middle"
+		        android:minHeight="40dip"
+		        android:paddingLeft="10dip"
+		        android:paddingTop="4dip"
+		        android:paddingBottom="4dip"
+		        android:textSize = "15sp"
+		        />
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="2dip"
+		        android:background="@color/white"
+		        />
+		    <TextView 
+		        android:id="@+id/store_address"
+		        style="@style/detail_text"
+		        android:background="@drawable/roundcorner_middle"
+		        android:minHeight="40dip"
+		        android:paddingLeft="30dip"
+		        android:paddingTop="4dip"
+		        android:paddingBottom="4dip"
+		        android:textSize = "15sp"
+		        />
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="2dip"
+		        android:background="@color/white"
+		        />
+		    <TextView 
+		        android:id="@+id/store_mail"
+		        style="@style/detail_text"
+		        android:background="@drawable/roundcorner_middle"
+		        android:minHeight="40dip"
+		        android:paddingLeft="30dip"
+		        android:paddingTop="4dip"
+		        android:paddingBottom="4dip"
+		        android:textSize = "15sp"
+		        />
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="2dip"
+		        android:background="@color/white"
+		        />
+		    <TextView 
+		        android:id="@+id/store_phone"
+		        style="@style/detail_text"
+		        android:background="@drawable/roundcorner_bottom"
+		        android:minHeight="40dip"
+		        android:autoLink="phone"
+		        android:paddingLeft="30dip"
+		        android:paddingTop="4dip"
+		        android:paddingBottom="4dip"
+		        android:textSize = "15sp"
+		        />
+		    
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="100dip"
+		        android:background="@color/white"
+		        />
+		    <TextView 
+		        android:id="@+id/development_info"
+		        style="@style/detail_text"
+		        android:gravity="center_horizontal"
+		        android:textSize = "14sp"
+		        android:text="@string/DevelopmentInfo"
+		        />
+	    </LinearLayout>
+        </ScrollView>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="47dip" >
+	        <include layout="@layout/activity_main_footer" />
+        </LinearLayout>
+	 </LinearLayout>
+	 	 
+</LinearLayout>
+

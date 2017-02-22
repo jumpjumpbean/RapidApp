@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidAPP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bn_home">首页</string>
+    <string name="bn_sort">分类</string>
+    <string name="bn_pref">优惠</string>
+    <string name="bn_more">更多</string>
+    
+    <string name="prefText1">优惠期：</string>
+    <string name="wavyLine">~</string>
+    <string name="mailBox">邮箱：</string>
+    <string name="address">地址：</string>
+    <string name="phone">电话：</string>
+    <string name="introduction">简介：</string>
+    
+    <string name="baseURI">http://115.28.38.109</string>
+    <string name="SalerID">8a10bb823f716ba4013f7172e0b90000</string>
+    <string name="SalerName">水果店</string>
+    
+    <string name="NotifyKey">NotifyKey</string>
+    
+    <string name="DevelopmentInfo">大连云讯技术有限公司 诚品</string>
+    
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="blue">#684685</color>
+    <color name="red">#ff0000</color>
+    <color name="black_red">#c40000</color>
+    <color name="gray">#B2B3AB</color>
+    <color name="light_gray">#c3c3c3</color>
+    
+    <string name="Interval">5</string>
+    
+</resources>

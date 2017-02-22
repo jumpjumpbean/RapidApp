@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+/*popup_width658 - start*/
+.w458 { 
+	width:458px;/*width*/ 
+}
+.w458 .title .text { 
+	position:absolute; 
+	width: 438px; /*width*/ 
+	padding:0 0 0 20px;/*width*/ 
+}
+/*popup_width658 - end*/
+
+/*popup - start*/
+.greyLayerDefault { 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	background-color: #000; 
+	display:none; 
+	opacity: filter:alpha(opacity=65); -moz-opacity:0.65; opacity:0.65; 
+}
+#greyLayer { 
+	position:absolute; 
+	top:0; left:0; 
+	background-color: #000; 
+	display:none; 
+	filter: alpha(opacity=25); 
+	-moz-opacity: 0.25; opacity: 0.25; 
+}
+.popup { 
+	display:none; 
+	position:absolute; 
+	z-index:1021;
+	border-radius: 2px; 
+	box-shadow: 0px 3px 8px rgb(64,64,64); 
+	background-color:#fff;
+}
+
+.popHeader{
+	height: 40px;
+	background-color: #0077cc;
+	color: #fff;
+}
+.closeBtn{
+	float: right;
+	display: inline-block;
+	padding: 10px 10px;
+	color: #fff;
+}
+.closeBtn a{
+	color: #fff;
+}
+.closeBtn a:hover{
+	color: #ff0000;
+	font-weight: bold;
+	text-decoration: none;
+	cursor:pointer;
+}
+.popTitle{
+	float: left;
+	margin: 10px 10px;
+}
+.popBody{
+	margin: 20px 20px;
+}
+.popFoot{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.popFoot input[type="button"]{
+	margin: 0px 10px;
+	border: solid 1px #0055dd;
+	padding: 2px 10px;
+}
+
+
